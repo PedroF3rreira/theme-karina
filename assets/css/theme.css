@@ -85,7 +85,14 @@ header{
 /**
  * estilo da pagina principal
  */
+.page-container{
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-gap: 10px;
+}
+
 .posts-container article{
+	display: flex;
 	background-color: #FFF;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -94,13 +101,18 @@ header{
 	border-radius: 0.5em;
 }
 
-.page-container{
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-gap: 10px;
-}
 .posts-container{
 	grid-column: 1 / 8;
+}
+
+.post-body{
+
+	padding-left: 15px;
+
+}
+.post-body a{
+	color: rgba(173,52,191,1);
+	text-decoration: none;
 }
 aside{
 	grid-column: 8 / 12;
@@ -185,6 +197,14 @@ aside{
 .comment-reply-title{
 	color: rgba(173,52,191,1);
 }
+
+/**
+ * estilos para single page
+ **/
+.title-archive{
+	
+}
+
 
 footer{
 

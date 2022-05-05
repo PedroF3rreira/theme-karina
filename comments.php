@@ -6,8 +6,9 @@
 
  ?>
 
- <?php if(have_comments()): ?>
- 	<?php foreach($comments as $comment):?>
+
+ <?php if(have_comments()):?><!--verifica se têm comentários-->
+ 	<?php foreach($comments as $comment):?><!--itera sobre os comentários-->
  		<div class="comment">
  			
  			<div class="comment-image">
