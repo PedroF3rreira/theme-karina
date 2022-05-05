@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;1,300&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body{
+	
+	background-color: rgba(173,52,191,.2);
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+header{
+	background: radial-gradient(circle, rgba(173,52,191,1) 35%, rgba(61,6,69,1) 100%);
+	box-shadow: 0em .1em .1em rgba(0,0,0,.5);
+}
+.header-section{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+}
+.logo{
+	color: #FFF;
+}
+.menu{
+	display: flex;
+}
+.menu ul,
+.menu li{
+	
+	list-style: none;
+}
+.menu a{
+
+	margin-right: 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+}
+.menu a:hover{
+	color: #888;
+}
+
+
+/**
+ * estilo de searchform
+ */
+.search-form input[type=search]{
+	box-shadow: inset 0em 0.2em 0.5em rgba(61,6,69,0.5);
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+	padding: 5px;
+	border: 1px solid rgba(61,6,69,0.5);
+	margin-right: -5px;
+	color: rgba(173,52,191,1);
+	outline: none;
+	width: 250px;
+}
+.search-form input[type=search]:focus{
+	box-shadow: .2em 0.2em 0.5em rgba(61,6,69,0.5);
+}
+.search-form input[type=submit]{
+	
+	border: 1px solid rgba(61,6,69,0.2);
+	background: rgba(173,52,191,1);
+	padding: 5px;
+	color: #fff;
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+	box-shadow: .2em 0.2em 0.5em rgba(61,6,69,0.5);
+	cursor: pointer;
+}
+.search-form input[type=submit]:hover{
+	
+	box-shadow: inset 0em 0.2em 0.5em rgba(61,6,69,0.5);
+}
+
+
+
+/**
+ * estilo da pagina principal
+ */
+.posts-container article{
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	box-shadow: 0em 0.2em 0.5em rgba(61,6,69,0.5);
+	border-radius: 0.5em;
+}
+
+.page-container{
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-gap: 10px;
+}
+.posts-container{
+	grid-column: 1 / 8;
+}
+aside{
+	grid-column: 8 / 12;
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	box-shadow: 0em 0.2em 0.5em rgba(61,6,69,0.5);
+	border-radius: 0.5em;
+}
+.recentcomments{
+
+	list-style: none;
+	padding-left: 10px;
+}
+
+.pagination {
+	
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0em 0.2em 0.5em rgba(61,6,69,0.5);
+	border-radius: 0.5em;
+	background-color: #fff;
+	padding: 15px;
+}
+
+.pagination a{
+	
+	text-decoration: none;
+	font-weight: bold;
+	color: rgba(173,52,191,1);;
+}
+
+.pagination a:hover{
+
+	color: rgba(61,6,69,1);
+}
+
+
+/**
+ *Estilos de Comentários 
+ **/
+.comment{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(173,52,191,1);
+	color: #fff;
+	padding: 7px;
+	box-shadow: inset 0em 0.2em 0.5em rgba(61,6,69,0.5);
+	border-radius: 0.5em;
+}
+.comment-image{
+	display: flex;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 1.0);
+
+}
+.comment-image img{
+
+	width: 100%;
+
+}
+.comment-content{
+	padding-left: 15px;
+}
+.author-comment{
+
+	font-size: 12px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/**
+ * Formulário de comentários
+ **/
+.comment-respond{
+}
+.comment-reply-title{
+	color: rgba(173,52,191,1);
+}
+
+footer{
+
+	margin-top: 10px;
+	background: radial-gradient(circle, rgba(173,52,191,1) 35%, rgba(61,6,69,1) 100%);	
+	color: #fff;
+	height: 150px;
+
+}
