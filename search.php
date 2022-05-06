@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="container page-container">
-	
+	<h1>Você pesquisou por: <?php echo get_search_query();?></h1>
 	<div class="posts-container">
 		<?php if(have_posts()): ?>
 			<?php while(have_posts()): ?>

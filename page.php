@@ -5,20 +5,21 @@
 		<?php while(have_posts()): ?>
 			<?php the_post(); ?>
 			<article>
-				
-				<a href="<?php the_permalink();?>">
+				<div>
+					<a href="<?php the_permalink();?>">
 
-					<?php the_title( $before = '<h2>', $after = '</h2>', $echo = true ) ?>
-					
-				</a>
+						<?php the_title( $before = '<h2>', $after = '</h2>', $echo = true ) ?>
+						
+					</a>
 
-				<?php if(has_post_thumbnail()): ?>
-					<?php the_post_thumbnail( $size = 'medium', $attr = 'post-thumbnail' );?>
-				<?php endif; ?>
-				<p><?=get_the_date();?> | <?php the_author(); ?></p>
-				<p class="excerpt">
-					<?php the_content(); ?>
-				</p>
+					<?php if(has_post_thumbnail()): ?>
+						<?php the_post_thumbnail( $size = 'medium', $attr = 'post-thumbnail' );?>
+					<?php endif; ?>
+					<p><?=get_the_date();?> | <?php the_author(); ?></p>
+					<p class="excerpt">
+						<?php the_content(); ?>
+					</p>
+				</div>
 				<div>
 					<?php if(comments_open()): ?>
 						<?php comments_template(); ?>
